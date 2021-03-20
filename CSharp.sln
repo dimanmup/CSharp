@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types_IntsVarL", "Types_Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types_Ints_", "Types_Ints_\Types_Ints_.csproj", "{903CA1ED-AB50-4320-804A-DDDC7BADE65F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types_Checking", "Types_Checking\Types_Checking.csproj", "{D789C5D6-D8B4-487C-B536-70E93181D36B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{903CA1ED-AB50-4320-804A-DDDC7BADE65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{903CA1ED-AB50-4320-804A-DDDC7BADE65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{903CA1ED-AB50-4320-804A-DDDC7BADE65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D789C5D6-D8B4-487C-B536-70E93181D36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D789C5D6-D8B4-487C-B536-70E93181D36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D789C5D6-D8B4-487C-B536-70E93181D36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D789C5D6-D8B4-487C-B536-70E93181D36B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
