@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_Vector3", "Unity_Vect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_Vector3_Vectors", "Unity_Vector3_Vectors\Unity_Vector3_Vectors.csproj", "{183CAB20-40A3-48C5-AA9F-4894E282650F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity_Vector3_Operators", "Unity_Vector3_Operators\Unity_Vector3_Operators.csproj", "{ED165E63-4CCC-45BC-A21D-57491878E270}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{183CAB20-40A3-48C5-AA9F-4894E282650F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{183CAB20-40A3-48C5-AA9F-4894E282650F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{183CAB20-40A3-48C5-AA9F-4894E282650F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED165E63-4CCC-45BC-A21D-57491878E270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED165E63-4CCC-45BC-A21D-57491878E270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED165E63-4CCC-45BC-A21D-57491878E270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED165E63-4CCC-45BC-A21D-57491878E270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
