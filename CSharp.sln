@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types_RealsFields", "Types_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types_RealsEpsilon", "Types_RealsEpsilon\Types_RealsEpsilon.csproj", "{BAAEBC92-6BE4-46F6-B85D-3278AE36F1FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types_RealsNaN", "Types_RealsNaN\Types_RealsNaN.csproj", "{1466F7E4-B8B4-4456-9D07-96C2C19D947D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{BAAEBC92-6BE4-46F6-B85D-3278AE36F1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAAEBC92-6BE4-46F6-B85D-3278AE36F1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAAEBC92-6BE4-46F6-B85D-3278AE36F1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1466F7E4-B8B4-4456-9D07-96C2C19D947D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1466F7E4-B8B4-4456-9D07-96C2C19D947D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1466F7E4-B8B4-4456-9D07-96C2C19D947D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1466F7E4-B8B4-4456-9D07-96C2C19D947D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
