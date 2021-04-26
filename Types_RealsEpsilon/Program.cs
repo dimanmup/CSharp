@@ -12,6 +12,7 @@ namespace Types_RealsEpsilon
             Console.WriteLine(0 == 0 + double.Epsilon); // false
             Console.WriteLine(0 == 0 - double.Epsilon); // false
             Console.WriteLine(1 - 1 == double.Epsilon); // false
+            Console.WriteLine(1 - (1 - double.Epsilon) == double.Epsilon); // false
             Console.ReadKey();
         }
     }
