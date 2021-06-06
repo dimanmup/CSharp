@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection_XT2AttributeOfT1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection_XT2AttributeOfT1InstanceExe", "Reflection_XT2AttributeOfT1InstanceExe\Reflection_XT2AttributeOfT1InstanceExe.csproj", "{B1163282-7A27-4A77-9FBF-21FEE9747B7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka_1_Producing", "Kafka_1_Producing\Kafka_1_Producing.csproj", "{B543B750-5BB6-4AAA-98CF-170CA5453819}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{B1163282-7A27-4A77-9FBF-21FEE9747B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1163282-7A27-4A77-9FBF-21FEE9747B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1163282-7A27-4A77-9FBF-21FEE9747B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
