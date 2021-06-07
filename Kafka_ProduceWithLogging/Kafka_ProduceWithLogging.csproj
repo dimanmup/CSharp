@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B543B750-5BB6-4AAA-98CF-170CA5453819}</ProjectGuid>
+    <ProjectGuid>{10EF6E0B-A4E7-4535-9EE5-3E2032B8AA3F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Kafka_1_Producing</RootNamespace>
-    <AssemblyName>Kafka_1_Producing</AssemblyName>
+    <RootNamespace>Kafka_ProduceWithLogging</RootNamespace>
+    <AssemblyName>Kafka_ProduceWithLogging</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

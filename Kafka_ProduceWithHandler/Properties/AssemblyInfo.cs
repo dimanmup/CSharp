@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Kafka_1_Producing")]
+[assembly: AssemblyTitle("Kafka_ProduceWithHandler")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Kafka_1_Producing")]
+[assembly: AssemblyProduct("Kafka_ProduceWithHandler")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b543b750-5bb6-4aaa-98cf-170ca5453819")]
+[assembly: Guid("82b97361-143e-44db-afea-e359949714bb")]
 
 // Version information for an assembly consists of the following four values:
 //

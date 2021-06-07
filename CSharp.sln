@@ -59,7 +59,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection_XT2AttributeOfT1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection_XT2AttributeOfT1InstanceExe", "Reflection_XT2AttributeOfT1InstanceExe\Reflection_XT2AttributeOfT1InstanceExe.csproj", "{B1163282-7A27-4A77-9FBF-21FEE9747B7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka_1_Producing", "Kafka_1_Producing\Kafka_1_Producing.csproj", "{B543B750-5BB6-4AAA-98CF-170CA5453819}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka_Produce", "Kafka_Produce\Kafka_Produce.csproj", "{23DC1CA3-87A4-41F0-8D3F-AF734C6149F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka_ProduceWithHandler", "Kafka_ProduceWithHandler\Kafka_ProduceWithHandler.csproj", "{82B97361-143E-44DB-AFEA-E359949714BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka_ProduceWithLogging", "Kafka_ProduceWithLogging\Kafka_ProduceWithLogging.csproj", "{10EF6E0B-A4E7-4535-9EE5-3E2032B8AA3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,10 +183,18 @@ Global
 		{B1163282-7A27-4A77-9FBF-21FEE9747B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1163282-7A27-4A77-9FBF-21FEE9747B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1163282-7A27-4A77-9FBF-21FEE9747B7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B543B750-5BB6-4AAA-98CF-170CA5453819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DC1CA3-87A4-41F0-8D3F-AF734C6149F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DC1CA3-87A4-41F0-8D3F-AF734C6149F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DC1CA3-87A4-41F0-8D3F-AF734C6149F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DC1CA3-87A4-41F0-8D3F-AF734C6149F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B97361-143E-44DB-AFEA-E359949714BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B97361-143E-44DB-AFEA-E359949714BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B97361-143E-44DB-AFEA-E359949714BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B97361-143E-44DB-AFEA-E359949714BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EF6E0B-A4E7-4535-9EE5-3E2032B8AA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EF6E0B-A4E7-4535-9EE5-3E2032B8AA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EF6E0B-A4E7-4535-9EE5-3E2032B8AA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EF6E0B-A4E7-4535-9EE5-3E2032B8AA3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
