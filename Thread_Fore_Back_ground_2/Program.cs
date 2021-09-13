@@ -7,16 +7,16 @@ namespace Thread_Fore_Back_ground_2
     {
         static void Main()
         {
-            Thread fg = new Thread(foregroundThread);
+            Thread fg = new Thread(ForegroundThread);
            
-            Thread bg = new Thread(backgroundThread);
+            Thread bg = new Thread(BackgroundThread);
             bg.IsBackground = true;
 
             fg.Start();
             bg.Start();            
         }
 
-        static void foregroundThread()
+        static void ForegroundThread()
         {
             for (int i = 5; i >= 0; i--)
             {
@@ -25,7 +25,7 @@ namespace Thread_Fore_Back_ground_2
             }
         }
 
-        static void backgroundThread()
+        static void BackgroundThread()
         {
             while (true)
             {

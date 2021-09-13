@@ -7,7 +7,7 @@ namespace Thread_Fore_Back_ground
     {
         static void Main()
         {
-            Thread th = new Thread(backgroundThread);
+            Thread th = new Thread(BackgroundThread);
             th.IsBackground = true;
             th.Start();
 
@@ -18,7 +18,7 @@ namespace Thread_Fore_Back_ground
             }
         }
 
-        static void backgroundThread()
+        static void BackgroundThread()
         {
             while (true)
             {
