@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Types_StringElement", "Type
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Fore_Back_ground", "Thread_Fore_Back_ground\Thread_Fore_Back_ground.csproj", "{A5EDBF21-88DB-4D1D-906F-204A4051D3F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Fore_Back_ground_2", "Thread_Fore_Back_ground_2\Thread_Fore_Back_ground_2.csproj", "{36D7E497-29AB-4E68-81D1-70AE9B899B4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{A5EDBF21-88DB-4D1D-906F-204A4051D3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5EDBF21-88DB-4D1D-906F-204A4051D3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5EDBF21-88DB-4D1D-906F-204A4051D3F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D7E497-29AB-4E68-81D1-70AE9B899B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D7E497-29AB-4E68-81D1-70AE9B899B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D7E497-29AB-4E68-81D1-70AE9B899B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D7E497-29AB-4E68-81D1-70AE9B899B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
