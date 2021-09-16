@@ -105,6 +105,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_IsAlive", "Thread_Is
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Join", "Thread_Join\Thread_Join.csproj", "{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Abort", "Thread_Abort\Thread_Abort.csproj", "{7C12E472-6186-4069-B8CE-89FD0F5BC502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_AbortPar", "Thread_AbortPar\Thread_AbortPar.csproj", "{F52ADFAE-002C-44F1-B56B-A2C652699DBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +319,14 @@ Global
 		{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C12E472-6186-4069-B8CE-89FD0F5BC502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C12E472-6186-4069-B8CE-89FD0F5BC502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C12E472-6186-4069-B8CE-89FD0F5BC502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C12E472-6186-4069-B8CE-89FD0F5BC502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F52ADFAE-002C-44F1-B56B-A2C652699DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F52ADFAE-002C-44F1-B56B-A2C652699DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F52ADFAE-002C-44F1-B56B-A2C652699DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F52ADFAE-002C-44F1-B56B-A2C652699DBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
