@@ -109,6 +109,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Abort", "Thread_Abor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_AbortPar", "Thread_AbortPar\Thread_AbortPar.csproj", "{F52ADFAE-002C-44F1-B56B-A2C652699DBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Priority", "Thread_Priority\Thread_Priority.csproj", "{11D91698-EF1E-409B-AE36-C59F0CE54FC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -327,6 +329,10 @@ Global
 		{F52ADFAE-002C-44F1-B56B-A2C652699DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F52ADFAE-002C-44F1-B56B-A2C652699DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F52ADFAE-002C-44F1-B56B-A2C652699DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D91698-EF1E-409B-AE36-C59F0CE54FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D91698-EF1E-409B-AE36-C59F0CE54FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D91698-EF1E-409B-AE36-C59F0CE54FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D91698-EF1E-409B-AE36-C59F0CE54FC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
