@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_IdProperties", "Thre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_IsAlive", "Thread_IsAlive\Thread_IsAlive.csproj", "{42E1A339-BEA1-498E-AA3C-314613F87309}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Join", "Thread_Join\Thread_Join.csproj", "{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -309,6 +311,10 @@ Global
 		{42E1A339-BEA1-498E-AA3C-314613F87309}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E1A339-BEA1-498E-AA3C-314613F87309}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E1A339-BEA1-498E-AA3C-314613F87309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CEF3C1A-7B4E-48F5-8E3D-83F4D6675D15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
