@@ -119,6 +119,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Lock_AsyncWriting", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Lock_SyncWriting", "Thread_Lock_SyncWriting\Thread_Lock_SyncWriting.csproj", "{53BD2D17-7346-472C-B320-D42B85AAB8C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_SuspendResume", "Thread_SuspendResume\Thread_SuspendResume.csproj", "{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -357,6 +359,10 @@ Global
 		{53BD2D17-7346-472C-B320-D42B85AAB8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53BD2D17-7346-472C-B320-D42B85AAB8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53BD2D17-7346-472C-B320-D42B85AAB8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
