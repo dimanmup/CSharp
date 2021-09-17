@@ -115,6 +115,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Cores", "Thread_Core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Affinity", "Thread_Affinity\Thread_Affinity.csproj", "{D8196BC6-BACD-406B-94D2-166DA4D50EBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Lock_AsyncWriting", "Thread_Lock_AsyncWriting\Thread_Lock_AsyncWriting.csproj", "{18D9FD59-E864-4DE0-978D-CE1AFBAD3F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Lock_SyncWriting", "Thread_Lock_SyncWriting\Thread_Lock_SyncWriting.csproj", "{53BD2D17-7346-472C-B320-D42B85AAB8C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -345,6 +349,14 @@ Global
 		{D8196BC6-BACD-406B-94D2-166DA4D50EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8196BC6-BACD-406B-94D2-166DA4D50EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8196BC6-BACD-406B-94D2-166DA4D50EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D9FD59-E864-4DE0-978D-CE1AFBAD3F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D9FD59-E864-4DE0-978D-CE1AFBAD3F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D9FD59-E864-4DE0-978D-CE1AFBAD3F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D9FD59-E864-4DE0-978D-CE1AFBAD3F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BD2D17-7346-472C-B320-D42B85AAB8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BD2D17-7346-472C-B320-D42B85AAB8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BD2D17-7346-472C-B320-D42B85AAB8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BD2D17-7346-472C-B320-D42B85AAB8C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
