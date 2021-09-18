@@ -18,6 +18,8 @@ namespace Thread_SuspendResume
 
             while (writer1.ThreadState != ThreadState.Suspended) ;
             writer1.Resume();
+
+            //***+++***+++***+++***+++
         }
 
         static void Writer1()
