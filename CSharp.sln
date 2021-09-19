@@ -125,6 +125,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_Console", "Stream_Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_SreamReader", "Stream_SreamReader\Stream_SreamReader.csproj", "{7D9F0577-7B83-49CD-A0EA-D2881752F59C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_StreamReader_2Threads", "Stream_StreamReader_2Threads\Stream_StreamReader_2Threads.csproj", "{8E97DB48-28F8-4B44-81B3-7C68C4761F89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -375,6 +377,10 @@ Global
 		{7D9F0577-7B83-49CD-A0EA-D2881752F59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D9F0577-7B83-49CD-A0EA-D2881752F59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D9F0577-7B83-49CD-A0EA-D2881752F59C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E97DB48-28F8-4B44-81B3-7C68C4761F89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E97DB48-28F8-4B44-81B3-7C68C4761F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E97DB48-28F8-4B44-81B3-7C68C4761F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E97DB48-28F8-4B44-81B3-7C68C4761F89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
