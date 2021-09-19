@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Lock_SyncWriting", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_SuspendResume", "Thread_SuspendResume\Thread_SuspendResume.csproj", "{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_Console", "Stream_Console\Stream_Console.csproj", "{38130EFF-6354-4781-95B5-FB4011E73EB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,10 @@ Global
 		{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EAE7A33-B57C-45E1-B121-8A10AB22C28E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38130EFF-6354-4781-95B5-FB4011E73EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38130EFF-6354-4781-95B5-FB4011E73EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38130EFF-6354-4781-95B5-FB4011E73EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38130EFF-6354-4781-95B5-FB4011E73EB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
