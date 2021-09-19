@@ -8,6 +8,24 @@ namespace Stream_SreamReader
         static void Main()
         {
             string path = "AZ.txt";
+            CreateTestFile(path);
+
+            using (StreamReader sr = new StreamReader(path))
+            {
+                int b = sr.Read();
+                while (b != -1)
+                {
+                    Console.Write((char)b);
+                    b = sr.Read();
+                }
+            }
+
+            Console.ReadKey();
+            //ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        }
+
+        static void CreateTestFile(string path)
+        {
             using (StreamWriter sw = new StreamWriter(path))
             {
                 for (int i = 'A'; i <= 'Z'; i++)
@@ -15,23 +33,6 @@ namespace Stream_SreamReader
                     sw.Write((char)i);
                 }
             }
-
-            string s = "";
-
-            using (StreamReader sr = new StreamReader(path))
-            {
-                int b = sr.Read();
-                while (b != -1)
-                {
-                    s += (char)b;
-                    Console.Write((char)b);
-                    b = sr.Read();
-                }
-            }            
-
-            Console.WriteLine(s);
-            Console.ReadKey();
-            //ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
         }
     }
 }

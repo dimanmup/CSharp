@@ -8,16 +8,10 @@ namespace Stream_SreamReaderOnSreamReader
         static void Main()
         {
             string path = "AZ.txt";
-            using (StreamWriter sw = new StreamWriter(path))
-            {
-                for (int i = 'A'; i <= 'Z'; i++)
-                {
-                    sw.Write((char)i);
-                }
-            }
+            CreateTestFile(path);
 
-            using (StreamReader sr1 = new StreamReader(path))
-            using (StreamReader sr2 = new StreamReader(sr1.BaseStream))
+            using (StreamReader sr1 = new StreamReader(path)) // Закрывается последним.
+            using (StreamReader sr2 = new StreamReader(sr1.BaseStream)) // Закрывается первым.
             {
                 while (sr2.Peek() != -1)
                 {
@@ -27,6 +21,17 @@ namespace Stream_SreamReaderOnSreamReader
 
             Console.ReadKey();
             //ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        }
+
+        static void CreateTestFile(string path)
+        {
+            using (StreamWriter sw = new StreamWriter(path))
+            {
+                for (int i = 'A'; i <= 'Z'; i++)
+                {
+                    sw.Write((char)i);
+                }
+            }
         }
     }
 }
