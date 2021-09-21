@@ -12,11 +12,9 @@ namespace Stream_SreamReader
 
             using (StreamReader sr = new StreamReader(path))
             {
-                int b = sr.Read();
-                while (b != -1)
+                while (sr.Peek() != -1)
                 {
-                    Console.Write((char)b);
-                    b = sr.Read();
+                    Console.Write((char)sr.Read());
                 }
             }
 
