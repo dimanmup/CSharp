@@ -7,10 +7,10 @@ namespace Stream_FileStream_Seek
     {
         static void Main()
         {
-            string path = "text.txt";
+            string path = "AZ.txt";
             CreateTestFile(path);
 
-            using (FileStream fs = new FileStream("text.txt", FileMode.Open, FileAccess.Read))
+            using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
                 for (long offset = 1; offset <= fs.Length; offset++)
                 {
