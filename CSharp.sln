@@ -143,6 +143,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_StreamReader_Discard
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_CopyTo", "Stream_CopyTo\Stream_CopyTo.csproj", "{E8CFFD73-6643-4907-82FD-E7A4DF18CE1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console_Draft", "Console_Draft\Console_Draft.csproj", "{E49AC93B-52D1-465F-A255-0D818871D2E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream_FileStream_Seek", "Stream_FileStream_Seek\Stream_FileStream_Seek.csproj", "{C3EE4177-C5E6-4A11-BC20-3A1FD8654C35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -429,6 +433,14 @@ Global
 		{E8CFFD73-6643-4907-82FD-E7A4DF18CE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8CFFD73-6643-4907-82FD-E7A4DF18CE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8CFFD73-6643-4907-82FD-E7A4DF18CE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E49AC93B-52D1-465F-A255-0D818871D2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49AC93B-52D1-465F-A255-0D818871D2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49AC93B-52D1-465F-A255-0D818871D2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49AC93B-52D1-465F-A255-0D818871D2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EE4177-C5E6-4A11-BC20-3A1FD8654C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EE4177-C5E6-4A11-BC20-3A1FD8654C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EE4177-C5E6-4A11-BC20-3A1FD8654C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EE4177-C5E6-4A11-BC20-3A1FD8654C35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
