@@ -155,6 +155,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stream_FileToBlobAsZip_Sqli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stream_FileToBlob_Mysql", "Stream_FileToBlob_Mysql\Stream_FileToBlob_Mysql.csproj", "{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex_2Thread", "Mutex_2Thread\Mutex_2Thread.csproj", "{A7628611-F811-4547-9E5C-F23C0BC860F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -465,6 +467,10 @@ Global
 		{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7628611-F811-4547-9E5C-F23C0BC860F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7628611-F811-4547-9E5C-F23C0BC860F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7628611-F811-4547-9E5C-F23C0BC860F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7628611-F811-4547-9E5C-F23C0BC860F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
