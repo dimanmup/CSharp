@@ -157,7 +157,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stream_FileToBlob_Mysql", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutex_2Thread", "Mutex_2Thread\Mutex_2Thread.csproj", "{A7628611-F811-4547-9E5C-F23C0BC860F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex_WinFormsAppSingleton", "Mutex_WinFormsAppSingleton\Mutex_WinFormsAppSingleton.csproj", "{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutex_WinFormsAppSingleton", "Mutex_WinFormsAppSingleton\Mutex_WinFormsAppSingleton.csproj", "{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium_Test", "Selenium_Test\Selenium_Test.csproj", "{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -477,6 +479,10 @@ Global
 		{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
