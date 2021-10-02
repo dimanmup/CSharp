@@ -183,6 +183,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_Wait2", "Thr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_Wait_Timeout", "Thread_Monitor_Wait_Timeout\Thread_Monitor_Wait_Timeout.csproj", "{4D333CF9-65F7-4EAF-9BDA-F221A09BF106}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_Pulse", "Thread_Monitor_Pulse\Thread_Monitor_Pulse.csproj", "{63A81DC3-6B10-4185-8835-4A624CD64F75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -545,6 +547,10 @@ Global
 		{4D333CF9-65F7-4EAF-9BDA-F221A09BF106}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D333CF9-65F7-4EAF-9BDA-F221A09BF106}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D333CF9-65F7-4EAF-9BDA-F221A09BF106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A81DC3-6B10-4185-8835-4A624CD64F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A81DC3-6B10-4185-8835-4A624CD64F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A81DC3-6B10-4185-8835-4A624CD64F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A81DC3-6B10-4185-8835-4A624CD64F75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
