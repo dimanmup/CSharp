@@ -171,6 +171,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Activator_FreeSpirePdf", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_MethodImplAttribute", "Thread_MethodImplAttribute\Thread_MethodImplAttribute.csproj", "{8681A58C-7CB4-4DA6-BA6B-A4E386B1FC5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_lock", "Thread_Monitor_lock\Thread_Monitor_lock.csproj", "{A000BD18-1789-44CE-8F71-4FC1934D8B4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -509,6 +511,10 @@ Global
 		{8681A58C-7CB4-4DA6-BA6B-A4E386B1FC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8681A58C-7CB4-4DA6-BA6B-A4E386B1FC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8681A58C-7CB4-4DA6-BA6B-A4E386B1FC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A000BD18-1789-44CE-8F71-4FC1934D8B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A000BD18-1789-44CE-8F71-4FC1934D8B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A000BD18-1789-44CE-8F71-4FC1934D8B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A000BD18-1789-44CE-8F71-4FC1934D8B4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
