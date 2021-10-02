@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Thread_Monitor_Pulse
+namespace Thread_Monitor_PulseAll
 {
     class Program
     {
@@ -27,7 +27,7 @@ namespace Thread_Monitor_Pulse
 
                                 if (threadNumber == threadsCount)
                                 {
-                                    Monitor.Pulse(typeof(Program));
+                                    Monitor.PulseAll(typeof(Program));
                                 }
 
                                 Monitor.Wait(typeof(Program));
@@ -66,8 +66,12 @@ namespace Thread_Monitor_Pulse
                 //T1 >> 7
                 //T1 >> 8
                 //T1 >> 9
+                //T2 >> 6
+                //T2 >> 7
+                //T2 >> 8
+                //T2 >> 9
 
-                // T2 и T3 в "wait queue".
+                // T3 в "wait queue".
             }
         }
     }
