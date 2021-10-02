@@ -175,6 +175,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_lock", "Thre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_lockTaken", "Thread_Monitor_lockTaken\Thread_Monitor_lockTaken.csproj", "{6B166E72-F971-44BA-9FC5-A5B080CCD68A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_lockTaken_false", "Thread_Monitor_lockTaken_false\Thread_Monitor_lockTaken_false.csproj", "{147B5420-8F8A-4E13-B9AC-AA3F6158BB20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -521,6 +523,10 @@ Global
 		{6B166E72-F971-44BA-9FC5-A5B080CCD68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B166E72-F971-44BA-9FC5-A5B080CCD68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B166E72-F971-44BA-9FC5-A5B080CCD68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147B5420-8F8A-4E13-B9AC-AA3F6158BB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147B5420-8F8A-4E13-B9AC-AA3F6158BB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147B5420-8F8A-4E13-B9AC-AA3F6158BB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147B5420-8F8A-4E13-B9AC-AA3F6158BB20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
