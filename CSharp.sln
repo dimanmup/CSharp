@@ -193,6 +193,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Monitor_TickTock", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Mutex_WaitOne", "Thread_Mutex_WaitOne\Thread_Mutex_WaitOne.csproj", "{38C71F2A-D845-4308-8983-8CF356496F24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Mutex_WaitOneTimeout", "Thread_Mutex_WaitOneTimeout\Thread_Mutex_WaitOneTimeout.csproj", "{7E73C9BD-E544-46BA-908E-8CF010AB03FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -575,6 +577,10 @@ Global
 		{38C71F2A-D845-4308-8983-8CF356496F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38C71F2A-D845-4308-8983-8CF356496F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38C71F2A-D845-4308-8983-8CF356496F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E73C9BD-E544-46BA-908E-8CF010AB03FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E73C9BD-E544-46BA-908E-8CF010AB03FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E73C9BD-E544-46BA-908E-8CF010AB03FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E73C9BD-E544-46BA-908E-8CF010AB03FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
