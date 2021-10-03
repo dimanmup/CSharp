@@ -27,6 +27,7 @@ namespace Thread_Mutex_Singleton
             //Thread 5 >> Овладел Mutex.
             //Thread 6 >> Нашел Mutex.
             //Thread 6 >> Не овладел Mutex.
+            //Thread 6 >> ЭКЗЕМПЛЯР УЖЕ ЗАПУЩЕН!
             //Thread 5 >> Освободил Mutex.
         }
 
@@ -39,6 +40,11 @@ namespace Thread_Mutex_Singleton
                 if (!MyMutex.WaitOne(TimeSpan.Zero))
                 {
                     Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} >> Не овладел Mutex.");
+
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} >> ЭКЗЕМПЛЯР УЖЕ ЗАПУЩЕН!");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+
                     return;
                 }
             }
