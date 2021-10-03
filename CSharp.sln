@@ -155,8 +155,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stream_FileToBlobAsZip_Sqli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stream_FileToBlob_Mysql", "Stream_FileToBlob_Mysql\Stream_FileToBlob_Mysql.csproj", "{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mutex_WinFormsAppSingleton", "Mutex_WinFormsAppSingleton\Mutex_WinFormsAppSingleton.csproj", "{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selenium_Test", "Selenium_Test\Selenium_Test.csproj", "{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tor_TryConnection", "Tor_TryConnection\Tor_TryConnection.csproj", "{58A279B6-7292-4EAF-851B-9377CE887EC5}"
@@ -196,6 +194,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Mutex_initiallyOwned", "Thread_Mutex_initiallyOwned\Thread_Mutex_initiallyOwned.csproj", "{EEC09333-98DC-49C8-9A78-331778341EC7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thread_Mutex_Singleton", "Thread_Mutex_Singleton\Thread_Mutex_Singleton.csproj", "{EB084A67-DD46-4917-9345-8454D11AB018}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thread_Mutex_WinFormsAppSingleton", "Thread_Mutex_WinFormsAppSingleton\Thread_Mutex_WinFormsAppSingleton.csproj", "{65B576E7-A707-4ACF-A2F2-9B83A0B81D57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -507,10 +507,6 @@ Global
 		{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E486EE6-ADB6-49F6-B355-28D796FBFAAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A873621-9D73-45DA-8F74-7BF6EA1E92B1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97F49F6A-5D84-40C7-9C0C-72ECA8E426E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -587,6 +583,10 @@ Global
 		{EB084A67-DD46-4917-9345-8454D11AB018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB084A67-DD46-4917-9345-8454D11AB018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB084A67-DD46-4917-9345-8454D11AB018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65B576E7-A707-4ACF-A2F2-9B83A0B81D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65B576E7-A707-4ACF-A2F2-9B83A0B81D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65B576E7-A707-4ACF-A2F2-9B83A0B81D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65B576E7-A707-4ACF-A2F2-9B83A0B81D57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

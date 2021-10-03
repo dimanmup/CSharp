@@ -1,5 +1,5 @@
 ﻿
-namespace Mutex_WinFormsAppSingleton
+namespace Thread_Mutex_WinFormsAppSingleton
 {
     partial class Form1
     {

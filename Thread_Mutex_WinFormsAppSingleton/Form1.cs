@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Mutex_WinFormsAppSingleton
+namespace Thread_Mutex_WinFormsAppSingleton
 {
     public partial class Form1 : Form
     {

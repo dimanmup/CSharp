@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Mutex_WinFormsAppSingleton
+namespace Thread_Mutex_WinFormsAppSingleton
 {
     static class Program
     {
