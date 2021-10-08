@@ -197,7 +197,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thread_Mutex_Singleton", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thread_Mutex_WinFormsAppSingleton", "Thread_Mutex_WinFormsAppSingleton\Thread_Mutex_WinFormsAppSingleton.csproj", "{65B576E7-A707-4ACF-A2F2-9B83A0B81D57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Semaphore_2Owns", "Thread_Semaphore_2Owns\Thread_Semaphore_2Owns.csproj", "{1AB12631-3C84-4DBC-8600-3D85FFCB3765}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Semaphore_2Owners", "Thread_Semaphore_2Owners\Thread_Semaphore_2Owners.csproj", "{1AB12631-3C84-4DBC-8600-3D85FFCB3765}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Semaphore_2Instances", "Thread_Semaphore_2Instances\Thread_Semaphore_2Instances.csproj", "{D4341935-D45B-41D4-BFF8-AFE84E681296}"
 EndProject

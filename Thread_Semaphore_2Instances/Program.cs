@@ -14,7 +14,7 @@ namespace Thread_Semaphore_2Instances
 
             for (int i = 0; i < ths.Length; i++)
             {
-                ths[i] = new Thread(() => TwiceMethod());
+                ths[i] = new Thread(() => TwineMethod());
                 ths[i].Start();
                 Thread.Sleep(200);
             }
@@ -34,7 +34,7 @@ namespace Thread_Semaphore_2Instances
             //Thread 5 >> Не получил разрешение, 2 экземпляра уже запущены!
         }
 
-        public static void TwiceMethod()
+        public static void TwineMethod()
         {
             bool createdNew = false;
             mySemaphore = new Semaphore(2, 2, SemaphoreName, out createdNew);

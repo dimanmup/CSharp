@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Thread_Semaphore_2Owns
+namespace Thread_Semaphore_2Owners
 {
     class Program
     {
