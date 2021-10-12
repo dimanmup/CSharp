@@ -37,6 +37,7 @@ namespace Stream_FileToBlob_Oracle
                 idString = pId.Value.ToString();
             }
 
+            using (OracleTransaction tr = connection.BeginTransaction())
             using (OracleCommand cmd = connection.CreateCommand())
             {
                 cmd.CommandText = $"SELECT ID, {blobColumnName} FROM {tableName} WHERE ID = {idString}";
@@ -53,7 +54,10 @@ namespace Stream_FileToBlob_Oracle
                         source.CopyTo(blob);
                     }
                 }
+
+                tr.Commit();
             }
+            
         }
     }
 
@@ -67,7 +71,7 @@ namespace Stream_FileToBlob_Oracle
                 using (FileStream fs = new FileStream(@"E:\Docs\.NET\Троелсен (2018).pdf", FileMode.Open))
                 {
                     string name = fs.Name.Split('\\').Last();
-                    fs.CopyToBlob(connection, "FILE_STORE", "DATA", "NAME", name, "DATA_SIZE");
+                    fs.CopyToBlob(connection, "FILE_STORE", "BINARY_DATA", "NAME", name, "BINARY_DATA_SIZE");
                 }
             }
         }
