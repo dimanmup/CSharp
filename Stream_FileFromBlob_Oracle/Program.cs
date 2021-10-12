@@ -1,6 +1,5 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
-using System;
 using System.Data;
 using System.IO;
 
@@ -13,6 +12,7 @@ namespace Stream_FileFromBlob_Oracle
             string tableName,
             string blobColumnName,
             string fileNameColumnName,
+            string idColumnName,
             int idValue,
             string folder
             )
@@ -24,7 +24,7 @@ namespace Stream_FileFromBlob_Oracle
 
             using (OracleCommand cmd = connection.CreateCommand())
             {
-                cmd.CommandText = $"SELECT ID, {blobColumnName}, {fileNameColumnName} FROM {tableName} WHERE ID = {idValue}";
+                cmd.CommandText = $"SELECT {idColumnName}, {blobColumnName}, {fileNameColumnName} FROM {tableName} WHERE {idColumnName} = {idValue}";
 
                 using (OracleDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow))
                 {
@@ -52,7 +52,7 @@ namespace Stream_FileFromBlob_Oracle
             string connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.182.130)(PORT=1521))(CONNECT_DATA=(SID=orcl)));User Id=orcl_u;Password=orcl_u";
             using (OracleConnection connection = new OracleConnection(connectionString))
             {
-                connection.SaveBlob("FILE_STORE", "DATA", "NAME", 11, @"C:\Users\Diman\Desktop");
+                connection.SaveBlob("FILE_STORE", "BINARY_DATA", "NAME", "ID", 20, @"C:\Users\Diman\Desktop");
             }
         }
     }
