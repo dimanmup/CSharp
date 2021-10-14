@@ -13,68 +13,104 @@ namespace UnityDrawing
 
         public Grid()
         {
-            int pbXOffset = 30;
+            int pbXOffset = 40;
             int pbYOffset = 15;
+            int xLabelWidth = pbXOffset + 30;
+            int yLabelWidth = pbXOffset + 10;
             int majorDelta = 50;
             int minorDelta = 10;
+
             Color majorAxisColor = Color.LightSteelBlue;
             Color minorAxisColor = Color.Gainsboro;
             Color axisTextColor = Color.SteelBlue;
             Pen majorAxisPen = new Pen(majorAxisColor, 1);
             Pen minorAxisPen = new Pen(minorAxisColor, 1);
-            int i;
+            Pen majorAxisPenPartsSeparator = new Pen(majorAxisColor, 2);
 
             pb = new PictureBox();
-            pb.Width = 3_000;
-            pb.Height = 3_000;
+            pb.Width = 1000;
+            pb.Height = 1000;
             pb.Location = new Point(pbXOffset, pbYOffset);
+            int xMin = 0;
+            int yMin = 0;
 
             canvas = new Bitmap(pb.Width, pb.Height);
             Graphics = Graphics.FromImage(canvas);
 
+            int i;
+            int x, y;
+
             // Minor deltas.
             i = 0;
-            while (minorDelta * i < pb.Width)
+            do
             {
-                Graphics.DrawLine(minorAxisPen, minorDelta * i, 0, minorDelta * i, pb.Height);
-                i++;
-            }
+                x = minorDelta * i++;
+                Graphics.DrawLine(minorAxisPen, x, 0, x, pb.Height);
+            } 
+            while (x < pb.Width);
+
             i = 0;
-            while (minorDelta * i < pb.Width)
+            do
             {
-                Graphics.DrawLine(minorAxisPen, 0, minorDelta * i, pb.Width, minorDelta * i);
-                i++;
+                y = minorDelta * i++;
+                Graphics.DrawLine(minorAxisPen, 0, y, pb.Width, y);
             }
+            while (y < pb.Height);
 
             // Major deltas.
             i = 0;
-            while (majorDelta * i++ < pb.Width)
+            
+            do
             {
-                Graphics.DrawLine(majorAxisPen, majorDelta * i, 0, majorDelta * i, pb.Width);
+                x = majorDelta * i++;
+
+                if ((xMin + x) % 250 == 0)
+                {
+                    Graphics.DrawLine(majorAxisPenPartsSeparator, x, 0, x, pb.Width);
+                }
+                else
+                {
+                    Graphics.DrawLine(majorAxisPen, x, 0, x, pb.Width);
+                }
+
                 Graphics.FillEllipse(new SolidBrush(axisTextColor), majorDelta * i - 3, -3, 6, 6);
                 axisLabels.Add(new Label
                 {
                     ForeColor = axisTextColor,
-                    Location = new Point(majorDelta * i + pbXOffset / 2, 0),
+                    Location = new Point(x + pbXOffset / 2, 0),
                     TextAlign = ContentAlignment.MiddleCenter,
-                    Text = (majorDelta * i).ToString(),
-                    Width = pbXOffset
+                    Text = (xMin + x).ToString(),
+                    Width = xLabelWidth
                 });
-            }
+            } 
+            while (x < pb.Width - majorDelta);
+
             i = 0;
-            while (majorDelta * i++ < pb.Height)
+            do
             {
-                Graphics.DrawLine(majorAxisPen, 0, majorDelta * i, pb.Width, majorDelta * i);
+                y = majorDelta * i++;
+
+                if ((yMin + y) % 250 == 0)
+                {
+                    Graphics.DrawLine(majorAxisPenPartsSeparator, 0, y, pb.Width, y);
+                }
+                else
+                {
+                    Graphics.DrawLine(majorAxisPen, 0, y, pb.Width, y);
+                }
+
                 Graphics.FillEllipse(new SolidBrush(axisTextColor), -3, majorDelta * i - 3, 6, 6);
                 axisLabels.Add(new Label
                 {
                     ForeColor = axisTextColor,
-                    Location = new Point(0, majorDelta * i + pbYOffset / 2),
+                    Location = new Point(-11, majorDelta * i + pbYOffset / 2),
                     TextAlign = ContentAlignment.MiddleRight,
-                    Text = (majorDelta * i).ToString(),
-                    Width = pbXOffset
+                    Text = (yMin + majorDelta * i).ToString(),
+                    Width = yLabelWidth
                 });
             }
+            while (y < pb.Height - majorDelta);
+
         }
 
         public void Fill(Panel p)
