@@ -40,7 +40,7 @@ namespace UnityDrawing
             int i;
             int x, y;
 
-            // Minor deltas.
+            #region Minor deltas
             i = 0;
             do
             {
@@ -56,8 +56,10 @@ namespace UnityDrawing
                 Graphics.DrawLine(minorAxisPen, 0, y, pb.Width, y);
             }
             while (y < pb.Height);
+            #endregion
 
-            // Major deltas.
+            #region Major deltas
+
             i = 0;
             
             do
@@ -110,6 +112,8 @@ namespace UnityDrawing
                 });
             }
             while (y < pb.Height - majorDelta);
+
+            #endregion
 
         }
 
