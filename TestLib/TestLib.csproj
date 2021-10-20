@@ -7,11 +7,12 @@
     <Description>Prints the name and the current version of this assembly.</Description>
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl />
-    <AssemblyVersion>1.0.0.3</AssemblyVersion>
-    <FileVersion>1.0.0.3</FileVersion>
-    <Version>1.0.0.3</Version>
+    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <FileVersion>1.0.0.4</FileVersion>
+    <Version>1.0.0.4</Version>
     <AssemblyName>Neomaster.TestLib</AssemblyName>
     <RootNamespace>Neomaster.TestLib</RootNamespace>
+    <Authors>Neomaster</Authors>
   </PropertyGroup>
 
   <ItemGroup>
