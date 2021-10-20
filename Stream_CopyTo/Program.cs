@@ -4,16 +4,23 @@ namespace Stream_CopyTo
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            string path1 = "AZ1.txt";
-            string path2 = "AZ2.txt";
-            CreateTestFile(path1);
+            string azPath = "AZ.txt";
+            string azCopy1Path = "AZ copy 1.txt";
+            string azCopy2Path = "AZ copy 2.txt";
 
-            using (StreamWriter sw = new StreamWriter(path2))
-            using (StreamReader sr = new StreamReader(path1))
+            CreateTestFile(azPath);
+
+            using (FileStream fsw = new FileStream(azCopy2Path, FileMode.Create, FileAccess.Write))
+            using (StreamWriter sw = new StreamWriter(azCopy1Path))
+
+            using (FileStream fsr = new FileStream(azPath, FileMode.Open, FileAccess.Read))
+            using (StreamReader sr = new StreamReader(azPath))
+            
             {
-                sr.BaseStream.CopyTo(sw.BaseStream);
+                sr.BaseStream.CopyTo(fsw);
+                fsr.CopyTo(sw.BaseStream);
             }
         }
 
