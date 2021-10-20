@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>Copyright © 2021 Neomaster</Copyright>
+    <Description>Prints the name and the current version of this assembly.</Description>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl />
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
+    <FileVersion>1.0.0.3</FileVersion>
+    <Version>1.0.0.3</Version>
+    <AssemblyName>Neomaster.TestLib</AssemblyName>
+    <RootNamespace>Neomaster.TestLib</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

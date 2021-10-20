@@ -6,6 +6,9 @@ namespace Console_Draft_Net5
 
     class Program
     {
-        
+        public static void Main()
+        {
+
+        }
     }
 }
