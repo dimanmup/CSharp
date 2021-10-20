@@ -233,9 +233,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "math1", "math1\math1.vcxpro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CppDllUser_Intro", "CppDllUser_Intro\CppDllUser_Intro.csproj", "{B3191CE4-59D6-4D35-9A14-CB26ABD53DED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console_Draft_Net5", "Console_Draft_Net5\Console_Draft_Net5.csproj", "{C19541B4-9637-4BCA-BD46-0EFB08572BA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console_Draft_Net5", "Console_Draft_Net5\Console_Draft_Net5.csproj", "{C19541B4-9637-4BCA-BD46-0EFB08572BA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CppDllUser_ExternC", "CppDllUser_ExternC\CppDllUser_ExternC.csproj", "{FA278E1C-933F-46EF-A1AD-A56AD48C7112}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CppDllUser_ExternC", "CppDllUser_ExternC\CppDllUser_ExternC.csproj", "{FA278E1C-933F-46EF-A1AD-A56AD48C7112}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysLiveScreen", "AlwaysLiveScreen\AlwaysLiveScreen.csproj", "{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1623,6 +1625,18 @@ Global
 		{FA278E1C-933F-46EF-A1AD-A56AD48C7112}.Release|x64.Build.0 = Release|Any CPU
 		{FA278E1C-933F-46EF-A1AD-A56AD48C7112}.Release|x86.ActiveCfg = Release|Any CPU
 		{FA278E1C-933F-46EF-A1AD-A56AD48C7112}.Release|x86.Build.0 = Release|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Debug|x64.Build.0 = Debug|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Debug|x86.Build.0 = Debug|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Release|x64.ActiveCfg = Release|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Release|x64.Build.0 = Release|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Release|x86.ActiveCfg = Release|Any CPU
+		{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
