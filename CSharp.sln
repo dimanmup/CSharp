@@ -237,15 +237,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console_Draft_Net5", "Conso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CppDllUser_ExternC", "CppDllUser_ExternC\CppDllUser_ExternC.csproj", "{FA278E1C-933F-46EF-A1AD-A56AD48C7112}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysLiveScreen", "AlwaysLiveScreen\AlwaysLiveScreen.csproj", "{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlwaysLiveScreen", "AlwaysLiveScreen\AlwaysLiveScreen.csproj", "{736D72B8-3886-4BF0-A8A5-0908DAC1BE9D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{4D293352-3EBC-42E9-8FC6-3075DE77A230}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLib", "TestLib\TestLib.csproj", "{AFDA67AA-ADF5-43EE-94F9-14C3F19C13A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibUser", "TestLibUser\TestLibUser.csproj", "{0F753839-C467-4737-AE61-1507FC811EEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLibUser", "TestLibUser\TestLibUser.csproj", "{0F753839-C467-4737-AE61-1507FC811EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibUserFromNugetGallery", "TestLibUserFromNugetGallery\TestLibUserFromNugetGallery.csproj", "{4C29148F-CB8E-40EB-BA50-A9DDA86DE3F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLibUserFromNugetGallery", "TestLibUserFromNugetGallery\TestLibUserFromNugetGallery.csproj", "{4C29148F-CB8E-40EB-BA50-A9DDA86DE3F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
