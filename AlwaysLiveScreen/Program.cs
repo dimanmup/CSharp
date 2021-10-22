@@ -21,7 +21,8 @@ namespace AlwaysLiveScreen
 
         static void Main()
         {
-            SetThreadExecutionState(EXECUTION_STATE.ES_CONTINUOUS | EXECUTION_STATE.ES_AWAYMODE_REQUIRED);
+            SetThreadExecutionState(EXECUTION_STATE.ES_CONTINUOUS 
+                | EXECUTION_STATE.ES_AWAYMODE_REQUIRED);
         }
     }
 }
