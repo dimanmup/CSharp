@@ -14,16 +14,6 @@ namespace DictShell
             if (val is int)
             {
                 return (int)val;
-            }    
-            
-            if (val is string)
-            {
-                return Get((string)val);
-            }
-
-            if (val is Func<float>)
-            {
-                return ((Func<float>)val).Invoke();
             }
 
             if (val is Func<string>)
