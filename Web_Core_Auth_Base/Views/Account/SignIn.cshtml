@@ -1,6 +1,6 @@
 ﻿@model UserModel
-<h1>РЕГИСТРАЦИЯ</h1>
-@using (Html.BeginForm("SignUp", "Account", FormMethod.Post))
+<h1>ВХОД</h1>
+@using (Html.BeginForm("SignIn", "Account", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
     @Html.TextBoxFor(m => m.Email)
@@ -9,4 +9,4 @@
     <br />
     <button type="submit">Отправить</button>
 }
-<h3>@ViewBag.Success</h3>
+<h3>@ViewBag.Error</h3>

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -81,5 +82,43 @@ namespace Web_Core_Auth_Base.Controllers
         }
 
         #endregion
+
+        #region Sign in
+
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SignIn(UserModel model)
+        {
+            // if (!ModelState.IsValid) ...
+
+            User user = await context.Users.FirstOrDefaultAsync(
+                    u => u.Email == model.Email 
+                    && u.Password == model.Password);
+            
+            if (user == null)
+            {
+                ViewBag.Error = "Неверная почта или пароль!";
+
+                return View(model);
+            }
+
+            await Authenticate(model.Email);
+            
+            return RedirectToAction("ForUsers", "Test");
+        }
+
+        #endregion
+
+        public async Task<IActionResult> SignOff()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

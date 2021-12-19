@@ -34,8 +34,8 @@ namespace Web_Core_Auth_Base
                 .AddCookie(options =>
                 {
                     // URL переадресации анонима на [Authorize]-запросе.
-                    options.LoginPath = new Microsoft.AspNetCore.Http
-                        .PathString("/Test/Error401");
+                    // Рекомендуется на страницу входа.
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Test/Error401");
                 });
         }
         
