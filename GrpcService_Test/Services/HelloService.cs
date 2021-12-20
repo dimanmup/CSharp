@@ -16,7 +16,7 @@ namespace GrpcService_Test.Services
         {
             return Task.FromResult(new HelloReply
             {
-                Message = request.Age > 25 ? "Hello " : ("Hi " + request.Name),
+                Message = (request.Age > 25 ? "Hello, " : "Hi, ") + request.Name,
                 Status = 400
             });
         }
