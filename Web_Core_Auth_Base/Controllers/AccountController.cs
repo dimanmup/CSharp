@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Web_Core_Auth_Base.Models;
@@ -17,6 +16,27 @@ namespace Web_Core_Auth_Base.Controllers
         public AccountController(AppDbContext context)
         {
             this.context = context;
+        }
+
+        /// <summary>
+        /// Создает куки аутентифицированности.
+        /// </summary>
+        private async Task Authenticate(string login)
+        {
+            List<Claim> claims = new List<Claim>
+            {
+                new Claim(ClaimsIdentity.DefaultNameClaimType, login)
+            };
+
+            ClaimsIdentity ci = new ClaimsIdentity(
+                claims,
+                "ApplicationCookie",
+                ClaimsIdentity.DefaultNameClaimType,
+                ClaimsIdentity.DefaultRoleClaimType);
+
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(ci));
         }
 
         #region Sign up
@@ -47,8 +67,8 @@ namespace Web_Core_Auth_Base.Controllers
 
             // Записать нового пользователя в БД.
             await context.SaveChangesAsync();
+            
             model.Id = user.Id;
-            Debug.WriteLine($"Created user id: {model.Id}");
 
             // Создать куки аутентифицированности.
             await Authenticate(model.Email);
@@ -56,29 +76,6 @@ namespace Web_Core_Auth_Base.Controllers
             ViewBag.Success = "Успех!";
 
             return View(model);
-        }
-
-        /// <summary>
-        /// Создает куки аутентифицированности.
-        /// </summary>
-        private async Task Authenticate(string login)
-        {
-            List<Claim> claims = new List<Claim>
-            {
-                new Claim(ClaimsIdentity.DefaultNameClaimType, login)
-            };
-            
-            ClaimsIdentity ci = new ClaimsIdentity(
-                claims, 
-                "ApplicationCookie", 
-                ClaimsIdentity.DefaultNameClaimType, 
-                ClaimsIdentity.DefaultRoleClaimType);
-
-            await HttpContext.SignInAsync(
-                CookieAuthenticationDefaults.AuthenticationScheme, 
-                new ClaimsPrincipal(ci));
-
-            Debug.WriteLine($"Created user authenticated: {ci.IsAuthenticated}");
         }
 
         #endregion
@@ -97,8 +94,8 @@ namespace Web_Core_Auth_Base.Controllers
             // if (!ModelState.IsValid) ...
 
             User user = await context.Users.FirstOrDefaultAsync(
-                    u => u.Email == model.Email 
-                    && u.Password == model.Password);
+                u => u.Email == model.Email 
+                && u.Password == model.Password);
             
             if (user == null)
             {
