@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+// Пространство имен ПО клиента, в котором будет сгенерирована реализация сервиса.
+option csharp_namespace = "GrpcService_Test.Services";
+
+// Пространство имен процедур сервера.
+package tests;
+
+service Hello {
+    // Интерфейс процедуры с возвратом.
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// Тип данных в запросе клиента.
+message HelloRequest {
+    string name = 1;
+    int32 age = 2;
+}
+
+// Тип данных в ответе сервера.
+message HelloReply {
+    string message = 1;
+    int32 status = 2;
+}
