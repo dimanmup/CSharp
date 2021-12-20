@@ -259,9 +259,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserAesKV_1", "UserAesKV_1\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web_Core_Auth_Base", "Web_Core_Auth_Base\Web_Core_Auth_Base.csproj", "{DE979F29-BD77-40E2-BEB1-EF52002DDDA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService_Test", "GrpcService_Test\GrpcService_Test.csproj", "{704E01F0-A537-47C8-84A0-D7444FFB62FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcService_Test", "GrpcService_Test\GrpcService_Test.csproj", "{704E01F0-A537-47C8-84A0-D7444FFB62FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService_Test_Client", "GrpcService_Test_Client\GrpcService_Test_Client.csproj", "{887EF438-C77D-4A91-B5AE-197C70DF919B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcService_Test_Client", "GrpcService_Test_Client\GrpcService_Test_Client.csproj", "{887EF438-C77D-4A91-B5AE-197C70DF919B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web_Core_Auth_BaseRoles", "Web_Core_Auth_BaseRoles\Web_Core_Auth_BaseRoles.csproj", "{B98A49B7-13B0-4AFA-B859-F84B55FA071F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1781,6 +1783,18 @@ Global
 		{887EF438-C77D-4A91-B5AE-197C70DF919B}.Release|x64.Build.0 = Release|Any CPU
 		{887EF438-C77D-4A91-B5AE-197C70DF919B}.Release|x86.ActiveCfg = Release|Any CPU
 		{887EF438-C77D-4A91-B5AE-197C70DF919B}.Release|x86.Build.0 = Release|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Debug|x64.Build.0 = Debug|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Debug|x86.Build.0 = Debug|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Release|x64.ActiveCfg = Release|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Release|x64.Build.0 = Release|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Release|x86.ActiveCfg = Release|Any CPU
+		{B98A49B7-13B0-4AFA-B859-F84B55FA071F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

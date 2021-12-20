@@ -1,0 +1,36 @@
+﻿@model IEnumerable<UserModel>
+<a href="/Account/CreateRelationships" class="green">++ Добавить группы</a>
+<hr />
+<a href="/Account/SignIn">Вход --&gt</a>
+<br />
+<a href="/Account/SignOff">&lt-- Выход</a>
+<hr />
+<a href="/Test/ForAuthenticated?ab=cd" class="blue">--&gt| [Authorize]</a>
+<br />
+<a href="/Test/ForAdmin?ab=cd" class="blue">--&gt| [Authorize(Roles = "Admin")]</a>
+<br />
+<a href="/Test/ForUserAuditor?ab=cd" class="blue">--&gt| [Authorize(Roles = "User,Auditor"])</a>
+<hr />
+<table border="1">
+    <tr>
+        <th>Логин</th>
+        <th>Пароль</th>
+        <th>Группы</th>
+    </tr>
+    @foreach (UserModel um in Model)
+    {
+        <tr>
+            <td>@um.Email</td>
+            <td>1</td>
+            <td>@string.Join(", ", um.Roles)</td>
+        </tr>
+    }
+</table>
+<style>
+    .blue {
+        color: blue;
+    }
+    .green {
+        color: green;
+    }
+</style>

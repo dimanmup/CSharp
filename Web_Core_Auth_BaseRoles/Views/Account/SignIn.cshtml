@@ -1,0 +1,12 @@
+﻿@model UserModel
+<h1>ВХОД</h1>
+@using (Html.BeginForm("SignIn", "Account", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.TextBoxFor(m => m.Email)
+    <br />
+    @Html.TextBoxFor(m => m.Password)
+    <br />
+    <button type="submit">Отправить</button>
+}
+<h3>@ViewBag.Error</h3>
