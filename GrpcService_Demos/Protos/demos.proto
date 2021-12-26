@@ -1,0 +1,15 @@
+syntax = "proto3";
+option csharp_namespace = "GrpcService_Demos.Services";
+package demos;
+
+service Demos {
+    rpc FieldsRulesHandler (FieldsWithRulesRequest) returns (FieldsWithRulesReply);
+}
+
+// FieldsRulesHandler()
+message FieldsWithRulesRequest {
+    int32 req = 1;
+}
+message FieldsWithRulesReply {
+    int32 sum = 1;
+}
