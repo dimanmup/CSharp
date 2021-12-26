@@ -18,6 +18,7 @@ namespace GrpcServiceDemosClient
             using var channel = GrpcChannel.ForAddress("https://localhost:5001");
             var client = new Demos.DemosClient(channel);
 
+            // Правила полей
             {
                 FieldsWithRulesRequest req = new FieldsWithRulesRequest();
                 req.Req = 1000;
@@ -33,6 +34,23 @@ namespace GrpcServiceDemosClient
 
                 Console.WriteLine(replyHeader);
                 Console.WriteLine(JsonConvert.SerializeObject(rep, Formatting.Indented));
+                Console.WriteLine(new string('_', 100));
+                Console.WriteLine();
+            }
+
+            // Перечисления
+            {
+                EnumsHandlerRequest req = new EnumsHandlerRequest();
+                req.Gender = genders.Male;
+
+                EnumsHandlerReply rep = client.EnumsHandler(req);
+
+                Console.WriteLine($"[{n++}]");
+                Console.WriteLine(requestHeader);
+                Console.WriteLine($"I am a {req.Gender}!");
+
+                Console.WriteLine(replyHeader);
+                Console.WriteLine($"You are not a {rep.Gender}!");
                 Console.WriteLine();
             }
 

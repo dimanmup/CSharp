@@ -4,7 +4,9 @@ package demos;
 
 service Demos {
     rpc FieldsWithRules (FieldsWithRulesRequest) returns (FieldsWithRulesReply);
+    rpc EnumsHandler (EnumsHandlerRequest) returns (EnumsHandlerReply);
 }
+// FieldsWithRules()
 message FieldsWithRulesRequest {
     int32 req = 1;
     optional int32 opt = 2;
@@ -12,4 +14,15 @@ message FieldsWithRulesRequest {
 }
 message FieldsWithRulesReply {
     int32 sum = 1;
+}
+// EnumsHandler()
+enum genders {
+    male = 0;
+    female = 1;
+}
+message EnumsHandlerRequest {   
+    genders gender = 1; 
+}
+message EnumsHandlerReply {
+    genders gender = 1;
 }
