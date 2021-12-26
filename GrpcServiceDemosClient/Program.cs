@@ -1,9 +1,12 @@
-﻿using Grpc.Net.Client;
+﻿using Grpc.Core;
+using Grpc.Net.Client;
 using GrpcServiceDemos;
 using Newtonsoft.Json;
 using System;
-using System.Diagnostics;
+using System.Collections.Generic;
+using System.IO;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace GrpcServiceDemosClient
 {
@@ -51,10 +54,53 @@ namespace GrpcServiceDemosClient
 
                 Console.WriteLine(replyHeader);
                 Console.WriteLine($"You are not a {rep.Gender}!");
+                Console.WriteLine(new string('_', 100));
+                Console.WriteLine();
+            }
+
+            // Stream
+            {
+                string source = @"E:\Docs\.NET\Троелсен (2018).pdf";
+                string destination = $@"{Environment.GetEnvironmentVariable("UserProfile")}\Desktop\Троелсен (2018).pdf";
+
+                Console.WriteLine($"[{n++}]");
+                Console.WriteLine();
+                Console.WriteLine($"Streaming \"{source}\" --> \"{destination}\"");
+                Console.WriteLine();
+
+                StreamGetterRequest req = new StreamGetterRequest();
+                req.FileName = source;
+
+                var rep = client.StreamGetter(req);
+                var query = rep.ResponseStream.ReadAllAsync();
+
+                StreamGetter_ResponseHandler(query, destination).Wait();
+
+                Console.WriteLine(new string('_', 100));
                 Console.WriteLine();
             }
 
             Console.ReadKey();
+        }
+
+        static async Task StreamGetter_ResponseHandler(IAsyncEnumerable<StreamGetterReply> query, string destinationPath)
+        {
+            using (FileStream fs = new FileStream(destinationPath, FileMode.Create, FileAccess.Write))
+            {
+                long writtenBytes = 0;
+
+                await foreach (var reply in query)
+                {
+                    writtenBytes += reply.FileBytes.Length;
+                    fs.Write(reply.FileBytes.ToByteArray());
+
+                    Console.Write($"\rHandled: {writtenBytes} bytes");
+
+                    Thread.Sleep(100);
+                }
+            }
+
+            Console.WriteLine();
         }
     }
 }

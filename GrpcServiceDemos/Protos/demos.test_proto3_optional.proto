@@ -5,6 +5,7 @@ package demos;
 service Demos {
     rpc FieldsWithRules (FieldsWithRulesRequest) returns (FieldsWithRulesReply);
     rpc EnumsHandler (EnumsHandlerRequest) returns (EnumsHandlerReply);
+    rpc StreamGetter (StreamGetterRequest) returns (stream StreamGetterReply);
 }
 // FieldsWithRules()
 message FieldsWithRulesRequest {
@@ -25,4 +26,11 @@ message EnumsHandlerRequest {
 }
 message EnumsHandlerReply {
     genders gender = 1;
+}
+// StreamGetter()
+message StreamGetterRequest {
+    string fileName = 1;
+}
+message StreamGetterReply {
+    bytes fileBytes = 1;
 }
