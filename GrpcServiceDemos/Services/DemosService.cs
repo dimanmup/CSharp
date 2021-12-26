@@ -20,7 +20,7 @@ namespace GrpcServiceDemos
         {
             return Task.FromResult(new FieldsWithRulesReply
             {
-                Sum = 1
+                Sum = request.Req + request.Opt + request.Rep.Sum()
             });
         }
     }

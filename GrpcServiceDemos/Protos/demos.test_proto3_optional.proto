@@ -8,6 +8,7 @@ service Demos {
 message FieldsWithRulesRequest {
     int32 req = 1;
     optional int32 opt = 2;
+    repeated int32 rep = 3;
 }
 message FieldsWithRulesReply {
     int32 sum = 1;

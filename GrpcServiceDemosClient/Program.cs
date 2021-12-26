@@ -22,6 +22,8 @@ namespace GrpcServiceDemosClient
                 FieldsWithRulesRequest req = new FieldsWithRulesRequest();
                 req.Req = 1000;
                 req.Opt = 100;
+                req.Rep.Add(10);
+                req.Rep.Add(1);
 
                 FieldsWithRulesReply rep = client.FieldsWithRules(req);
 
