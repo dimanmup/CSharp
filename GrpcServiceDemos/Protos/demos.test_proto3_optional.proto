@@ -6,6 +6,7 @@ service Demos {
     rpc FieldsWithRules (FieldsWithRulesRequest) returns (FieldsWithRulesReply);
     rpc EnumsHandler (EnumsHandlerRequest) returns (EnumsHandlerReply);
     rpc StreamGetter (StreamGetterRequest) returns (stream StreamGetterReply);
+    rpc StreamHandler (stream StreamHandlerRequest) returns (StreamHandlerReply);
 }
 // FieldsWithRules()
 message FieldsWithRulesRequest {
@@ -33,4 +34,11 @@ message StreamGetterRequest {
 }
 message StreamGetterReply {
     bytes fileBytes = 1;
+}
+// StreamHandler()
+message StreamHandlerRequest {
+    bytes fileBytes = 1;
+}
+message StreamHandlerReply {
+    int64 bytesSum = 1;
 }

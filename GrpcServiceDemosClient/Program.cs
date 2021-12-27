@@ -1,4 +1,5 @@
-﻿using Grpc.Core;
+﻿using Google.Protobuf;
+using Grpc.Core;
 using Grpc.Net.Client;
 using GrpcServiceDemos;
 using Newtonsoft.Json;
@@ -58,14 +59,14 @@ namespace GrpcServiceDemosClient
                 Console.WriteLine();
             }
 
-            // Stream
+            // Stream из сервера
             {
                 string source = @"E:\Docs\.NET\Троелсен (2018).pdf";
                 string destination = $@"{Environment.GetEnvironmentVariable("UserProfile")}\Desktop\Троелсен (2018).pdf";
 
                 Console.WriteLine($"[{n++}]");
                 Console.WriteLine();
-                Console.WriteLine($"Streaming \"{source}\" --> \"{destination}\"");
+                Console.WriteLine($"Streaming <-- \"{source}\"");
                 Console.WriteLine();
 
                 StreamGetterRequest req = new StreamGetterRequest();
@@ -78,6 +79,56 @@ namespace GrpcServiceDemosClient
 
                 Console.WriteLine(new string('_', 100));
                 Console.WriteLine();
+            }
+
+            // Stream в сервер
+            {
+                string source = @"E:\Docs\.NET\Троелсен (2018).pdf";
+
+                Console.WriteLine($"[{n++}]");
+                Console.WriteLine();
+                Console.WriteLine($"Streaming \"{source}\" -->");
+                Console.WriteLine();
+
+                using (var call = client.StreamHandler())
+                using (FileStream fs = new FileStream(source, FileMode.Open))
+                {
+                    int bufferSize = 1024 * 1024;
+                    byte[] buffer = new byte[bufferSize];
+                    long forwardBytes = fs.Length - fs.Position;
+                    long sentBytes = 0;
+
+                    while (forwardBytes > 0)
+                    {
+                        if (forwardBytes < bufferSize)
+                        {
+                            buffer = new byte[forwardBytes];
+                        }
+
+                        fs.ReadAsync(buffer, 0, buffer.Length).Wait();
+
+                        call.RequestStream.WriteAsync(new StreamHandlerRequest()
+                        {
+                            FileBytes = UnsafeByteOperations.UnsafeWrap(buffer)
+                        }).Wait();
+
+                        sentBytes += buffer.Length;
+                        Console.Write($"\rSent: {sentBytes} bytes");
+
+                        forwardBytes = fs.Length - fs.Position;
+                    }
+
+                    call.RequestStream.CompleteAsync().Wait();
+
+                    var replyTask = call.ResponseAsync;
+                    replyTask.Wait();
+
+                    StreamHandlerReply reply = replyTask.Result;
+
+                    Console.WriteLine();
+                    Console.WriteLine(replyHeader);
+                    Console.WriteLine($"Bytes handled by the server: {reply.BytesSum}");
+                }
             }
 
             Console.ReadKey();
@@ -95,8 +146,6 @@ namespace GrpcServiceDemosClient
                     fs.Write(reply.FileBytes.ToByteArray());
 
                     Console.Write($"\rHandled: {writtenBytes} bytes");
-
-                    Thread.Sleep(100);
                 }
             }
 

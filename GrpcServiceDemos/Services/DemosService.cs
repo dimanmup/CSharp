@@ -70,5 +70,18 @@ namespace GrpcServiceDemos
                 logger.LogWarning(e.Message);
             }
         }
+
+        public override async Task<StreamHandlerReply> StreamHandler(IAsyncStreamReader<StreamHandlerRequest> requestStream, ServerCallContext context)
+        {
+            StreamHandlerReply reply = new StreamHandlerReply();
+            reply.BytesSum = 0;
+
+            while (await requestStream.MoveNext())
+            {
+                reply.BytesSum += requestStream.Current.FileBytes.Length;
+            }
+
+            return reply;
+        }
     }
 }
